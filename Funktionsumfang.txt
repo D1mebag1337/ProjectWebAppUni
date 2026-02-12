@@ -1,0 +1,11 @@
+-Startseite
+	-Allgemeiner Text
+	-Images
+	-Link zu Stellenanzeigenuebersicht
+-Uebersicht offener Stellen
+-Stellenanzeige
+-Loginseite
+-Registerseite
+	-Bewerber
+-PW vergessen
+-Adminpanel - nur Recruiter
