@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.14)  14 FEB 2026 20:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.14)  15 FEB 2026 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,7 +169,8 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 5.
-)
+ (kapitel/einleitung/projektziel.aux)
+(kapitel/einleitung/vorbereitung.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -252,37 +253,45 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
  [1
 
 {C:/Users/czych/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-\openout2 = `kapitel/einleitungProjektziele.aux'.
+\openout2 = `kapitel/einleitung/projektziel.aux'.
 
- (kapitel/einleitungProjektziele.tex) [2
+ (kapitel/einleitung/projektziel.tex) [2
 
 ]
-\openout2 = `kapitel/einleitungVorbereitungen.aux'.
+\openout2 = `kapitel/einleitung/vorbereitung.aux'.
 
 
-(kapitel/einleitungVorbereitungen.tex) [3
+(kapitel/einleitung/vorbereitung.tex
+(kapitel/einleitung/vorbereitung/useCases.tex)
+(kapitel/einleitung/vorbereitung/funktionsumfang.tex)
+(kapitel/einleitung/vorbereitung/datenschutz.tex)
+(kapitel/einleitung/vorbereitung/frontend.tex)
+(kapitel/einleitung/vorbereitung/datenmodell.tex)
+(kapitel/einleitung/vorbereitung/technologie.tex)
+(kapitel/einleitung/vorbereitung/infrastrukur.tex)
+(kapitel/einleitung/vorbereitung/architektur.tex)) [3
 
 
 
 ] (main.aux
-(kapitel/einleitungProjektziele.aux) (kapitel/einleitungVorbereitungen.aux))
+(kapitel/einleitung/projektziel.aux) (kapitel/einleitung/vorbereitung.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3886 strings out of 467871
- 67656 string characters out of 5418376
- 476772 words of memory out of 5000000
- 32724 multiletter control sequences out of 15000+600000
- 628932 words of font info for 44 fonts, out of 8000000 for 9000
+ 3964 strings out of 467871
+ 70770 string characters out of 5418376
+ 480284 words of memory out of 5000000
+ 32763 multiletter control sequences out of 15000+600000
+ 632649 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,5n,67p,203b,182s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,5n,67p,203b,198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr12.pfb>
-Output written on main.pdf (3 pages, 27477 bytes).
+Output written on main.pdf (3 pages, 36869 bytes).
 PDF statistics:
  22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
