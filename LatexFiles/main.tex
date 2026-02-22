@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage[ngerman]{babel}
 \usepackage{graphicx}
@@ -7,7 +7,15 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage{titlesec}
+\titleformat{\section}
+	{\fontsize{12pt}{14pt}\bfseries}
+	{\thesection}{1em}{}
+\titleformat{\subsection}
+	{\fontsize{12pt}{14pt}\bfseries}
+	{\thesubsection}{1em}{}
 \begin{document}
 
 \tableofcontents
