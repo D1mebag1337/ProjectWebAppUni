@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.14)  22 FEB 2026 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.14)  22 FEB 2026 12:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,45 +175,69 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box56
 )
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks25
+
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
 (C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count298
+\l__color_backend_stack_int=\count301
 ) (main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 5.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen161
+\scratchcounter=\count302
+\scratchdimen=\dimen169
 \scratchbox=\box57
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen162
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count303
+\nofMParguments=\count304
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen170
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -224,7 +248,42 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (main.toc)
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(main.toc)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
@@ -232,20 +291,15 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 {C:/Users/czych/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (kapitel/ein
 leitung/projektziel.tex) (kapitel/einleitung/vorbereitung.tex
-Overfull \hbox (9.07645pt too wide) in paragraph at lines 5--1
-\OT1/cmr/m/n/12 des All-ge-mei-nes Gleich-be-hand-lungs-ge-setz (AGG), kon-zep-
-tio-nell ber[]ucksichtigt.
- []
-
 (kapitel/einleitung/vorbereitung/useCases.tex
 <resources/UseCase.jpg, id=7, 717.68124pt x 884.30376pt>
 File: resources/UseCase.jpg Graphic file (type jpg)
 <use resources/UseCase.jpg>
 Package pdftex.def Info: resources/UseCase.jpg  used on input line 8.
-(pdftex.def)             Requested size: 272.99881pt x 336.38976pt.
+(pdftex.def)             Requested size: 338.58632pt x 417.20155pt.
  [2])
-(kapitel/einleitung/vorbereitung/funktionsumfang.tex [3 <./resources/UseCase.jp
-g>]) (kapitel/einleitung/vorbereitung/datenschutz.tex)
+(kapitel/einleitung/vorbereitung/funktionsumfang.tex)
+(kapitel/einleitung/vorbereitung/datenschutz.tex [3 <./resources/UseCase.jpg>])
 (kapitel/einleitung/vorbereitung/frontend.tex)
 (kapitel/einleitung/vorbereitung/datenmodell.tex)
 (kapitel/einleitung/vorbereitung/technologie.tex)
@@ -257,18 +311,18 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3464 strings out of 467871
- 59808 string characters out of 5418376
- 473744 words of memory out of 5000000
- 32294 multiletter control sequences out of 15000+600000
+ 4030 strings out of 467871
+ 68615 string characters out of 5418376
+ 489386 words of memory out of 5000000
+ 32847 multiletter control sequences out of 15000+600000
  632986 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,296b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,296b,240s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\czych\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (4 pages, 111322 bytes).
+Output written on main.pdf (4 pages, 111262 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
