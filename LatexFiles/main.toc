@@ -3,10 +3,10 @@
 \contentsline {subsection}{\numberline {1.1}Projektziel}{2}{}%
 \contentsline {subsection}{\numberline {1.2}Vorbereitungen}{2}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}UseCases}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}User Interface}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}User Interface}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{4}{}%

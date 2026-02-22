@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.20)  20 FEB 2026 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.14)  22 FEB 2026 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -23,7 +23,7 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count283
@@ -44,8 +44,7 @@ on input line 2101.
 \U@D=\dimen149
 \l@unhyphenated=\language79
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.de
-f)
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count284
 Package babel Info: Configuration files are deprecated, as
@@ -55,68 +54,69 @@ Package babel Info: Configuration files are deprecated, as
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/inva
-lid\babel-ngerman.tex)
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\
+babel-ngerman.tex)
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 4320.
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerma
-n.ldf
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
 Language: ngerman 
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-
-german.def
-Package babel Info: Making " an active character on input line 470.
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-germ
+an.def
+Package babel Info: Making " an active character on input line 459.
 )))
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.s
-ty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.s
-ty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphi
-cs.cfg
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex
-.def
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
-For additional information on amsmath, use the `?' option.
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen152
 ))
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen153
-) (C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
-y
+)
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count285
@@ -167,94 +167,62 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
--pdftex.def
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count297
+\float@exts=\toks23
+\float@box=\box55
+\@float@everytoks=\toks24
+\@floatcapt=\box56
+)
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
+\l__color_backend_stack_int=\count298
 ) (main.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 5.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
-f.mkii
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
+\scratchcounter=\count299
 \scratchdimen=\dimen161
-\scratchbox=\box55
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count301
+\scratchbox=\box57
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count302
 \MPscratchDim=\dimen162
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks26
 )
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstop
-df-base.sty
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infware
-rr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvde
-finekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions
-.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.s
-ty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys
-.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftex
-cmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
-(C:\Users\StudiUser\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-s
-ys.cfg
+(C:\Users\czych\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (main.toc)
 \tf@toc=\write3
@@ -262,41 +230,47 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
  [1
 
-{C:/Users/StudiUser/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (kapitel
-/einleitung/projektziel.tex)
-(kapitel/einleitung/vorbereitung.tex
+{C:/Users/czych/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (kapitel/ein
+leitung/projektziel.tex) (kapitel/einleitung/vorbereitung.tex
 Overfull \hbox (9.07645pt too wide) in paragraph at lines 5--1
 \OT1/cmr/m/n/12 des All-ge-mei-nes Gleich-be-hand-lungs-ge-setz (AGG), kon-zep-
 tio-nell ber[]ucksichtigt.
  []
 
-(kapitel/einleitung/vorbereitung/useCases.tex)
-(kapitel/einleitung/vorbereitung/funktionsumfang.tex)
-(kapitel/einleitung/vorbereitung/datenschutz.tex)
+(kapitel/einleitung/vorbereitung/useCases.tex
+<resources/UseCase.jpg, id=7, 717.68124pt x 884.30376pt>
+File: resources/UseCase.jpg Graphic file (type jpg)
+<use resources/UseCase.jpg>
+Package pdftex.def Info: resources/UseCase.jpg  used on input line 8.
+(pdftex.def)             Requested size: 272.99881pt x 336.38976pt.
+ [2])
+(kapitel/einleitung/vorbereitung/funktionsumfang.tex [3 <./resources/UseCase.jp
+g>]) (kapitel/einleitung/vorbereitung/datenschutz.tex)
 (kapitel/einleitung/vorbereitung/frontend.tex)
 (kapitel/einleitung/vorbereitung/datenmodell.tex)
 (kapitel/einleitung/vorbereitung/technologie.tex)
 (kapitel/einleitung/vorbereitung/infrastrukur.tex)
-(kapitel/einleitung/vorbereitung/architektur.tex [2])) [3] (main.aux)
+(kapitel/einleitung/vorbereitung/architektur.tex)) [4] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3929 strings out of 467871
- 69246 string characters out of 5416440
- 481861 words of memory out of 5000000
- 32736 multiletter control sequences out of 15000+600000
- 632649 words of font info for 57 fonts, out of 8000000 for 9000
+ 3464 strings out of 467871
+ 59808 string characters out of 5418376
+ 473744 words of memory out of 5000000
+ 32294 multiletter control sequences out of 15000+600000
+ 632986 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,5n,67p,296b,198s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/StudiUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/StudiUser/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (3 pages, 39525 bytes).
+ 57i,7n,65p,296b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\czych\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/czych/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb>
+Output written on main.pdf (4 pages, 111322 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
