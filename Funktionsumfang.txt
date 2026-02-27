@@ -8,4 +8,16 @@
 -Registerseite
 	-Bewerber
 -PW vergessen
+-Bewerbungsdashboard (nach Login -> alle Bewerbungsstatus einzusehen)
+	- Übersicht als Tabelle mit offenen Bewerbungen
+	- Button -> Bewerbung durchführen
+-Bewerbungsseite
+	- DropDown aller verfügbaren Stellen
+	- Name
+	- VOrname
+	- Geburtsdaum
+	- Strasse, Hausnummer,
+	- PLZ
+	- Ort
+	- Uploods fuer Bewerbungsschreiben, Lebenslauf, Zeugnisse, Zertifikate als PDF
 -Adminpanel - nur Recruiter
