@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{4}{}%
 \contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{4}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}User Interface}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{5}{}%
