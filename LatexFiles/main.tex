@@ -17,6 +17,14 @@
 	{\fontsize{12pt}{14pt}\bfseries}
 	{\thesubsection}{1em}{}
 \usepackage{setspace}
+\usepackage[babel]{csquotes}
+\usepackage[
+  backend=biber,
+  style=apa,
+  sorting=nyt
+]{biblatex}
+\DeclareLanguageMapping{german}{german-apa}
+\addbibresource{literatur.bib}
 \onehalfspacing
 \begin{document}
 
@@ -26,5 +34,6 @@
 \input{kapitel/einleitung/projektziel.tex}
 \input{kapitel/einleitung/vorbereitung.tex}
 
-\end{document}
 
+\printbibliography
+\end{document}
