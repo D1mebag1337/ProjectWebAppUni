@@ -1,12 +1,12 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Projektziel}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Vorbereitungen}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}UseCases}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.4}User Interface}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{5}{}%
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Projektziel}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Vorbereitungen}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}UseCases}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{4}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{4}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}User Interface}{5}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{8}{subsubsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{8}{subsubsection.1.2.6}%
+\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{8}{subsubsection.1.2.7}%
+\contentsline {subsubsection}{\numberline {1.2.8}Architektur}{8}{subsubsection.1.2.8}%
