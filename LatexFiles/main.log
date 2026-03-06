@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  2 MAR 2026 14:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  6 MAR 2026 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,11 +793,18 @@ File: resources/UseCase.jpg Graphic file (type bmp)
  [2])
 (kapitel/einleitung/vorbereitung/funktionsumfang.tex [3])
 (kapitel/einleitung/vorbereitung/datenschutz.tex)
-(kapitel/einleitung/vorbereitung/frontend.tex)
+(kapitel/einleitung/vorbereitung/frontend.tex [4])
 (kapitel/einleitung/vorbereitung/datenmodell.tex)
-(kapitel/einleitung/vorbereitung/technologie.tex [4])
+(kapitel/einleitung/vorbereitung/technologie.tex)
 (kapitel/einleitung/vorbereitung/infrastrukur.tex)
-(kapitel/einleitung/vorbereitung/architektur.tex)) [5] (main.aux)
+(kapitel/einleitung/vorbereitung/architektur.tex))
+Overfull \hbox (0.65585pt too wide) in paragraph at lines 39--39
+[][]\TU/Arial(0)/m/n/10.95 Bundesrepublik Deutschland. (2006). \TU/Arial(0)/m/i
+t/10.95 Allgemeines Gleichbehandlungsgesetz\TU/Arial(0)/m/n/10.95 . Verfügbar 6
+. März 2026
+ []
+
+[5] [6] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -807,12 +814,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15900 strings out of 402987
- 337007 string characters out of 5448524
- 1367551 words of memory out of 5000000
- 44421 multiletter control sequences out of 15000+600000
+ 15917 strings out of 402987
+ 337455 string characters out of 5448524
+ 1373663 words of memory out of 5000000
+ 44438 multiletter control sequences out of 15000+600000
  631278 words of font info for 70 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  73i,6n,93p,695b,7179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (5 pages, 59564 bytes).
+Output written on main.xdv (6 pages, 86344 bytes).
