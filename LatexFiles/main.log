@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  9 MAR 2026 08:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  9 MAR 2026 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,75 +963,75 @@ File: resources/RecruiterDashboard.png Graphic file (type bmp)
 (kapitel/einleitung/vorbereitung/datenmodell.tex)
 (kapitel/einleitung/vorbereitung/technologie.tex)
 (kapitel/einleitung/vorbereitung/infrastrukur.tex)
-(kapitel/einleitung/vorbereitung/architektur.tex))
+(kapitel/einleitung/vorbereitung/architektur.tex)) [8]
 Overfull \hbox (0.65585pt too wide) in paragraph at lines 43--43
 [][]\TU/Arial(0)/m/n/10.95 Bundesrepublik Deutschland. (2006). \TU/Arial(0)/m/i
 t/10.95 Allgemeines Gleichbehandlungsgesetz\TU/Arial(0)/m/n/10.95 . Verfügbar 6
 . März 2026
  []
 
-[8] (resources/vergleichBackend.tex
-Underfull \hbox (badness 1142) in paragraph at lines 41--41
+(resources/anhaenge.tex (resources/vergleichBackend.tex
+Underfull \hbox (badness 1142) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 vaScript und zugehöri-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Hoch, Kenntnisse in
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 41--41
+Underfull \hbox (badness 4144) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 Java und Framework-
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 41--41
+Underfull \hbox (badness 4132) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Schnell umsetzbar für
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 41--41
+Underfull \hbox (badness 2828) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 klassische Webanwen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Strukturierte Ent-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 wicklung, aber relativ
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 41--41
+Underfull \hbox (badness 1024) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Läuft direkt auf klassi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Benötigt Node.js-
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 41--41
+Underfull \hbox (badness 1484) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Gute Skalierbarkeit für
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 moderne Webanwen-
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 41--41
+Underfull \hbox (badness 5756) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Für große Enterprise-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 []|\TU/Arial(0)/m/n/10 Okay, aber höherer
  []
 
@@ -1065,24 +1065,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\TU/Arial(0)/m/n/10 Komplexe Anwendun-
  []
 
-) [9] (main.aux)
+)
+File: resources/archBild.png Graphic file (type bmp)
+<resources/archBild.png>
+ [9]) [10] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B2F24057611332E56EE82EE4152281D6;1729.
+(rerunfilecheck)             Checksum: D8F5C6458C3C5CF6BEDCC2CBFA7470B0;1849.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22297 strings out of 402987
- 435685 string characters out of 5448524
- 1478814 words of memory out of 5000000
- 50737 multiletter control sequences out of 15000+600000
+ 22315 strings out of 402987
+ 436114 string characters out of 5448524
+ 1478858 words of memory out of 5000000
+ 50751 multiletter control sequences out of 15000+600000
  632116 words of font info for 76 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  73i,10n,93p,1183b,7179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (9 pages, 131272 bytes).
+Output written on main.xdv (10 pages, 140340 bytes).
