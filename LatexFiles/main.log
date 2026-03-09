@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  9 MAR 2026 10:05
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.2.22)  9 MAR 2026 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,26 +940,10 @@ Overfull \hbox (9.49763pt too wide) in paragraph at lines 5--1
 eines Gleichbehandlungsgesetz (AGG),
  []
 
-(kapitel/einleitung/vorbereitung/useCases.tex
-File: resources/UseCase.jpg Graphic file (type bmp)
-<resources/UseCase.jpg>
- [2])
-(kapitel/einleitung/vorbereitung/funktionsumfang.tex [3])
+(kapitel/einleitung/vorbereitung/useCases.tex)
+(kapitel/einleitung/vorbereitung/funktionsumfang.tex [2])
 (kapitel/einleitung/vorbereitung/datenschutz.tex)
-(kapitel/einleitung/vorbereitung/frontend.tex [4]
-File: resources/LandingPage.png Graphic file (type bmp)
-<resources/LandingPage.png>
- [5]
-File: resources/StellenOverview.png Graphic file (type bmp)
-<resources/StellenOverview.png>
-File: resources/Stellenanzeige.png Graphic file (type bmp)
-<resources/Stellenanzeige.png>
- [6]
-File: resources/Bewerbungsformular.png Graphic file (type bmp)
-<resources/Bewerbungsformular.png>
-File: resources/RecruiterDashboard.png Graphic file (type bmp)
-<resources/RecruiterDashboard.png>
- [7])
+(kapitel/einleitung/vorbereitung/frontend.tex [3])
 (kapitel/einleitung/vorbereitung/datenmodell.tex)
 (kapitel/einleitung/vorbereitung/technologie.tex)
 (kapitel/einleitung/vorbereitung/infrastrukur.tex)
@@ -969,14 +953,30 @@ Overfull \hbox (7.54604pt too wide) in paragraph at lines 2--40
 haltung erfolgt über eine SQLite-Datenbank,
  []
 
-[8]
+[4]
 Overfull \hbox (0.65585pt too wide) in paragraph at lines 43--43
 [][]\TU/Arial(0)/m/n/10.95 Bundesrepublik Deutschland. (2006). \TU/Arial(0)/m/i
 t/10.95 Allgemeines Gleichbehandlungsgesetz\TU/Arial(0)/m/n/10.95 . Verfügbar 6
 . März 2026
  []
 
-(resources/anhaenge.tex (resources/vergleichBackend.tex
+(resources/anhaenge.tex
+File: resources/UseCase.jpg Graphic file (type bmp)
+<resources/UseCase.jpg>
+ [5]
+File: resources/LandingPage.png Graphic file (type bmp)
+<resources/LandingPage.png>
+File: resources/StellenOverview.png Graphic file (type bmp)
+<resources/StellenOverview.png>
+ [6]
+File: resources/Stellenanzeige.png Graphic file (type bmp)
+<resources/Stellenanzeige.png>
+ [7]
+File: resources/Bewerbungsformular.png Graphic file (type bmp)
+<resources/Bewerbungsformular.png>
+File: resources/RecruiterDashboard.png Graphic file (type bmp)
+<resources/RecruiterDashboard.png>
+ [8] (resources/vergleichBackend.tex
 Underfull \hbox (badness 1142) in paragraph at lines 38--38
 \TU/Arial(0)/m/n/10 vaScript und zugehöri-
  []
@@ -1074,13 +1074,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 )
 File: resources/archBild.png Graphic file (type bmp)
 <resources/archBild.png>
- [9]) [10] (main.aux)
+) [9] [10] [11] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B9DBA99D33DBC69EA62000EE55EC1A25;1869.
+(rerunfilecheck)             Checksum: 4B3690BE345BFEA56BD8DABDFC595A1A;2296.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1088,10 +1088,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  22315 strings out of 402987
  436120 string characters out of 5448524
- 1478859 words of memory out of 5000000
+ 1474927 words of memory out of 5000000
  50751 multiletter control sequences out of 15000+600000
  632116 words of font info for 76 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  73i,10n,93p,1183b,7179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (10 pages, 149268 bytes).
+Output written on main.xdv (11 pages, 137968 bytes).
