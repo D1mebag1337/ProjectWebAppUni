@@ -1,35 +1,20 @@
-\subsection{Vorbereitungen}
-
+\subsection{Vorbereitende Maßnahmen}
 %Anwendungsfaelle-Abschnitt
 Bevor detailierte technische Anforderungen an das System ausgearbeitet werden koennen, benoetigt es eine einfache Uebersicht der Kernanwendungsfaelle.
 Hierzu wurde eine UseCase-Diagramm erstellt, um diese stark abstrahiert und einfach darzustellen, sodass die Stakeholder des Projektes diese einfach verstehen und nachvollziehen koennen.
 Das Diagramm (vgl. \ref{fig:useCase}) zeigt die zentralen Use-Cases bei der Nutzung eines Bewerbermanagementportals.
 
 %Funktionsumfang-Abschnitt
-Folgender Funktionsumfang wurde fuer das System definiert:
-\begin{itemize}
-\item Landing Page mit allgemeinen Infos zum Betrieb und Weiterleitungsmoeglichkeit zur Stellenuebersicht 
-\item Eine Uebersicht aller offener Stellen mit individueller Weiterleitung zur angeklickten Stellenanzeige
-\item Die Stellenanzeige mit allgemeinen Infos zur Stelle, Aufgabenbeschreibung, Vorraussetzungen und Weiterleitungsbutton zum Bewerbungsformular
-\item Das Bewerbungsformular, wo die allgemeinen Kontaktdaten zu sehen sind, Bewerbungsunterlagen (Anschreiben, Lebenslauf, Zeugnisse, Zertifikate) hochgeladen werden muessen und die zu bewerbende Stelle ausgewaehlt werden muss
-\item Das Bewerberdashboard, welches eine Statuseinsicht aller Bewerbungen darstellt
-\item Die Admin-Panel-Uebersicht fuer den Recruiter. Hier wird es eine Uebersicht aller Bewerbungen geben. Es wird die Moeglichkeit bestehen in die Detailanzeige einer bestimmten Bewerbung zu wechseln.
-\item Die Admin-Panel-Bewerbungsanzeige. Hier wird die in der Uebersicht ausgewaehlte Bewerbung detailiert angezeigt und es besteht hier die Moeglichkeit die hochgeladenen Unterlagen sich runterzuladen.
-\item Die Admin-Panel-Stellenerstellung bzw. -editierung. Hier soll die Moeglichkeit fuer den Recruiter geschaffen werden, neue Stellen oder aktive Stellen zu bearbeien bzw. deaktivieren.
-\item Ein Login-Fenster muss implementiert werden, sodass sowohl Bewerber und Recruiter auf die entsprechenden Dashboards zugreifen koennen.
-\item Fuer neue Bewerber wird ebenfalls eine Register-Page eingerichtet, wo allgemeine Kontaktdaten sowie Mail und Passwort fuer kuenftige Anmeldungen vergeben werden.
-\item Im Falle, dass ein Bewerber sein Passwort vergisst, wird ein Passwort-Reset Prozess eingebaut.
-\end{itemize}
-Dies sind die zentralen Funktionaliaeten, die als Basis fuer Architektur, UI und Datenbankmodellierung dienen.
+Für das Bewerbermanagementsystem wurde ein klar definierter Funktionsumfang festgelegt, der sowohl Bewerber:innen als auch Recruiter:innen berücksichtigt. 
+Als Einstiegspunkt dient eine Landing Page mit Weiterleitung zur Stellenübersicht, in der alle offenen Positionen dargestellt werden. 
+Über die jeweilige Stellendetailseite können Bewerber:innen Informationen zur Position einsehen und über ein Formular eine Bewerbung inklusive Upload relevanter Unterlagen einreichen.
+Registrierte Bewerber:innen erhalten Zugriff auf ein persönliches Dashboard, in dem der Status ihrer Bewerbungen eingesehen werden kann. 
+Für Recruiter:innen steht ein Administrationsbereich zur Verfügung, der eine Übersicht aller eingegangenen Bewerbungen sowie Detailansichten einzelner Bewerbungen mit Downloadfunktion für die hochgeladenen Dokumente bietet. 
+Zusätzlich können Stellenanzeigen erstellt, bearbeitet oder deaktiviert werden.
+Der Zugriff auf geschützte Bereiche erfolgt über ein Authentifizierungssystem mit Login, Registrierungsfunktion für neue Bewerber:innen sowie einem Passwort-Reset-Prozess. 
+Die beschriebenen Funktionen bilden die Grundlage für Architektur, Benutzeroberfläche und Datenbankmodellierung des Systems.
 
 %Datenschutz-Abschnitt
-\enquote{Data is the pollution problem of the information age, and protecting privacy is the environmental challenge.}
-\parencite[S.~1]{schneier2015}
-\newline
-Dieses Zitat verdeutlicht die zunehmende Bedeutung des Themas Datenschutz in der heutigen Zeit, in der personenbezogene Daten in großem Umfang erhoben und verarbeitet werden. 
-Auch im Rahmen des zu entwickelnden Bewerbermanagementportals werden sensible Daten verarbeitet, wie Namen und Adressen der Bewerber. 
-Deshalb ist die Einhaltung datenschutzrechtlicher und regulatorischer Anforderungen eine zentrale Rolle bei der Systemkonzeption.
-\newline
 Das Bewerbermanagementsystem verarbeitet personenbezogene Daten wie Name, Kontaktdaten, Lebenslauf und weitere Bewerbungsunterlagen. 
 Diese Daten duerfen ausschließlich zum Zweck der Durchführung des Bewerbungsverfahrens erhoben und verarbeitet werden. 
 Dabei werden die Grundsätze der Zweckbindung, Datenminimierung und Transparenz berücksichtigt. 
@@ -54,11 +39,11 @@ Diese dienen dazu, die Struktur der einzelnen Seiten frühzeitig zu visualisiere
 Interaktive Funktionalitäten oder Navigationsflüsse wurden im Rahmen dieses Projekts nicht prototypisch umgesetzt. 
 Die Entwürfe umfassen unter anderem:
 \begin{itemize}
-	\item die Karriereseite
-	\item die Stellenübersicht
-	\item die detailierte Stellenanzeige
-	\item ein Bewerbungsformular für Kandidat:innen
-	\item ein Dashboard fuer Recruiter:innen  
+	\item die Karriereseite (vgl. \ref{fig:landingPage})
+	\item die Stellenübersicht (vgl. \ref{fig:stellenOverview})
+	\item die detailierte Stellenanzeige (vgl. \ref{fig:stelle})
+	\item ein Bewerbungsformular für Kandidat:innen (vgl. \ref{fig:bewerbungFormular})
+	\item ein Dashboard fuer Recruiter:innen (vgl. \ref{fig:recruiterDashboard})
 \end{itemize}
 Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden 
 \href{https://www.figma.com/design/0LDsbppkYlQgEbpulk5ud9/ATS-WebApp?node-id=20-46&t=cHVE2zw3fKD8hl14}{\textit{Link}} eingesehen werden.
