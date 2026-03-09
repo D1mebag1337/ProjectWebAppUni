@@ -2,17 +2,9 @@
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Projektziel}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Vorbereitungen}{2}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}UseCases}{2}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Funktionsumfang}{2}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Datenschutz und Compilance}{3}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}User Interface}{4}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Datenmodell}{4}{subsubsection.1.2.5}%
-\contentsline {subsubsection}{\numberline {1.2.6}Technologien}{4}{subsubsection.1.2.6}%
-\contentsline {subsubsection}{\numberline {1.2.7}Infrastruktur}{4}{subsubsection.1.2.7}%
-\contentsline {subsection}{\numberline {1.3}Sofwarearchitektur}{5}{subsection.1.3}%
-\contentsline {section}{Anhang}{6}{subsection.1.3}%
-\contentsline {section}{\numberline {A}Anwendungsfaelle}{6}{appendix.A}%
-\contentsline {section}{\numberline {B}Wireframes und Mockups des UI}{7}{appendix.B}%
-\contentsline {section}{\numberline {C}Datenmodell}{11}{appendix.C}%
-\contentsline {section}{\numberline {D}Vergleich moeglicher Technologien}{11}{appendix.D}%
-\contentsline {section}{\numberline {E}Architekturbild}{11}{appendix.E}%
+\contentsline {section}{Anhang}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {A}Anwendungsfaelle}{5}{appendix.A}%
+\contentsline {section}{\numberline {B}Wireframes und Mockups des UI}{6}{appendix.B}%
+\contentsline {section}{\numberline {C}Datenmodell}{10}{appendix.C}%
+\contentsline {section}{\numberline {D}Vergleich moeglicher Technologien}{10}{appendix.D}%
+\contentsline {section}{\numberline {E}Architekturbild}{10}{appendix.E}%

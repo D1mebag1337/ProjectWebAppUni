@@ -1,10 +1,88 @@
 \subsection{Vorbereitungen}
 
-\input{kapitel/einleitung/vorbereitung/useCases.tex}
-\input{kapitel/einleitung/vorbereitung/funktionsumfang.tex}
-\input{kapitel/einleitung/vorbereitung/datenschutz.tex}
-\input{kapitel/einleitung/vorbereitung/frontend.tex}
-\input{kapitel/einleitung/vorbereitung/datenmodell.tex}
-\input{kapitel/einleitung/vorbereitung/technologie.tex}
-\input{kapitel/einleitung/vorbereitung/infrastrukur.tex}
-\input{kapitel/einleitung/vorbereitung/softwarearch.tex}
+%Anwendungsfaelle-Abschnitt
+Bevor detailierte technische Anforderungen an das System ausgearbeitet werden koennen, benoetigt es eine einfache Uebersicht der Kernanwendungsfaelle.
+Hierzu wurde eine UseCase-Diagramm erstellt, um diese stark abstrahiert und einfach darzustellen, sodass die Stakeholder des Projektes diese einfach verstehen und nachvollziehen koennen.
+Das Diagramm (vgl. \ref{fig:useCase}) zeigt die zentralen Use-Cases bei der Nutzung eines Bewerbermanagementportals.
+
+%Funktionsumfang-Abschnitt
+Folgender Funktionsumfang wurde fuer das System definiert:
+\begin{itemize}
+\item Landing Page mit allgemeinen Infos zum Betrieb und Weiterleitungsmoeglichkeit zur Stellenuebersicht 
+\item Eine Uebersicht aller offener Stellen mit individueller Weiterleitung zur angeklickten Stellenanzeige
+\item Die Stellenanzeige mit allgemeinen Infos zur Stelle, Aufgabenbeschreibung, Vorraussetzungen und Weiterleitungsbutton zum Bewerbungsformular
+\item Das Bewerbungsformular, wo die allgemeinen Kontaktdaten zu sehen sind, Bewerbungsunterlagen (Anschreiben, Lebenslauf, Zeugnisse, Zertifikate) hochgeladen werden muessen und die zu bewerbende Stelle ausgewaehlt werden muss
+\item Das Bewerberdashboard, welches eine Statuseinsicht aller Bewerbungen darstellt
+\item Die Admin-Panel-Uebersicht fuer den Recruiter. Hier wird es eine Uebersicht aller Bewerbungen geben. Es wird die Moeglichkeit bestehen in die Detailanzeige einer bestimmten Bewerbung zu wechseln.
+\item Die Admin-Panel-Bewerbungsanzeige. Hier wird die in der Uebersicht ausgewaehlte Bewerbung detailiert angezeigt und es besteht hier die Moeglichkeit die hochgeladenen Unterlagen sich runterzuladen.
+\item Die Admin-Panel-Stellenerstellung bzw. -editierung. Hier soll die Moeglichkeit fuer den Recruiter geschaffen werden, neue Stellen oder aktive Stellen zu bearbeien bzw. deaktivieren.
+\item Ein Login-Fenster muss implementiert werden, sodass sowohl Bewerber und Recruiter auf die entsprechenden Dashboards zugreifen koennen.
+\item Fuer neue Bewerber wird ebenfalls eine Register-Page eingerichtet, wo allgemeine Kontaktdaten sowie Mail und Passwort fuer kuenftige Anmeldungen vergeben werden.
+\item Im Falle, dass ein Bewerber sein Passwort vergisst, wird ein Passwort-Reset Prozess eingebaut.
+\end{itemize}
+Dies sind die zentralen Funktionaliaeten, die als Basis fuer Architektur, UI und Datenbankmodellierung dienen.
+
+%Datenschutz-Abschnitt
+\enquote{Data is the pollution problem of the information age, and protecting privacy is the environmental challenge.}
+\parencite[S.~1]{schneier2015}
+\newline
+Dieses Zitat verdeutlicht die zunehmende Bedeutung des Themas Datenschutz in der heutigen Zeit, in der personenbezogene Daten in großem Umfang erhoben und verarbeitet werden. 
+Auch im Rahmen des zu entwickelnden Bewerbermanagementportals werden sensible Daten verarbeitet, wie Namen und Adressen der Bewerber. 
+Deshalb ist die Einhaltung datenschutzrechtlicher und regulatorischer Anforderungen eine zentrale Rolle bei der Systemkonzeption.
+\newline
+Das Bewerbermanagementsystem verarbeitet personenbezogene Daten wie Name, Kontaktdaten, Lebenslauf und weitere Bewerbungsunterlagen. 
+Diese Daten duerfen ausschließlich zum Zweck der Durchführung des Bewerbungsverfahrens erhoben und verarbeitet werden. 
+Dabei werden die Grundsätze der Zweckbindung, Datenminimierung und Transparenz berücksichtigt. 
+Zudem wird sichergestellt, dass nur berechtigte Nutzerrollen (z. B. Recruiter:innen) Zugriff auf die Bewerberdaten erhalten. (vgl. Art.~5–6 \parencite{dsgvo}).
+\newline
+Vor dem Absenden einer Bewerbung müssen Bewerber:innen aktiv in die Verarbeitung ihrer personenbezogenen Daten einwilligen. 
+Diese Einwilligung erfolgt über eine verpflichtende Checkbox im Bewerbungsformular, die auf die Datenschutzerklärung verweist. 
+Dadurch wird sichergestellt, dass die Datenverarbeitung transparent erfolgt und auf einer klar dokumentierten Einwilligung der betroffenen Person basiert. (vgl. Art.~6 Abs. 1 lit a und 7 \parencite{dsgvo})
+\newline
+Bewerberdaten werden nur so lange gespeichert, wie es für den Bewerbungsprozess erforderlich ist. 
+Nach Abschluss des Verfahrens werden personenbezogene Daten nach einer Frist automatisch gelöscht. 
+Das es keine gestzlichen vorgegeben Fristen gibt, empfehlen Datenschutzbehoerden die Daten fuer maximal 6 Monate aufzubewahren. 
+Somit sind die gesetzlichen Anforderungen zur Speicherbegrenzung und Datenminimierung eingehalten. (vgl Art.~5 Abs. 1 lit. \parencite{dsgvo})
+\newline
+Das Bewerbungsformular wird so gestaltet, dass keine diskriminierenden oder nicht erforderlichen personenbezogenen Informationen abgefragt werden. 
+Angaben zu Merkmalen wie Geschlecht oder Alter werden nicht verpflichtend erhoben, um eine diskriminierungsfreie Bewerbungsprüfung zu gewährleisten. 
+Damit wird sichergestellt, dass der Bewerbungsprozess den Grundsätzen der Gleichbehandlung entspricht. (§1 und §7 \parencite{agg})
+
+%UserInterface-Abschnitt
+Zur Planung der Benutzeroberfläche wurden im Vorfeld Wireframes und Mockups mit dem Design-Tool Figma erstellt. 
+Diese dienen dazu, die Struktur der einzelnen Seiten frühzeitig zu visualisieren und zu überprüfen. 
+Interaktive Funktionalitäten oder Navigationsflüsse wurden im Rahmen dieses Projekts nicht prototypisch umgesetzt. 
+Die Entwürfe umfassen unter anderem:
+\begin{itemize}
+	\item die Karriereseite
+	\item die Stellenübersicht
+	\item die detailierte Stellenanzeige
+	\item ein Bewerbungsformular für Kandidat:innen
+	\item ein Dashboard fuer Recruiter:innen  
+\end{itemize}
+Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden 
+\href{https://www.figma.com/design/0LDsbppkYlQgEbpulk5ud9/ATS-WebApp?node-id=20-46&t=cHVE2zw3fKD8hl14}{\textit{Link}} eingesehen werden.
+
+%Datenmodell-Abschnitt
+Datenmodell wurde mithilfe eines ER-Modell visualisiert.
+Das ERM ist im Anhang unter --Hier Abbildung ERM referenzieren-- zu finden.
+
+%Technologie-Abschnitt
+Aufgrund der Vergleiche, die in den Tabellen \ref{tab:vglBackend} und \ref{tab:dbvergleich} durchgefuehert wurden, ergbibt sich folgender Tech-Stack.
+Das Backend wird mittels PHP, das Frontend via dem CSS Framework Tailwind implementiert und als Datenbank wird das leichgewichtige SQLite DBMS genutzt.
+
+%Infrastruktur-Abschnitt
+Die Infrastruktur des Systems ist in drei Umgebungen unterteilt: Entwicklungs-, Test- und Produktivumgebung. 
+Die Entwicklung erfolgt auf der lokalen Entwicklermaschine, die Testumgebung wird mittels VM gehostet und der prototypische Betrieb der Anwendung erfolgt auf einem Raspberry Pi. 
+Auf dem Gerät läuft eine Linux-basierte Serverumgebung. :w
+Der zentrale Apache-Web-Server und die PHP-Anwendung werden mithilfe des Tools Docker containisiert.
+Durch die Nutzung von Docker sind die Umgebungen standardisiert, was einen Rollout von Test auf Prod relativ leicht gestaltet.
+Der PI ist fuer diesen MVP vollkommend ausreichend. Falls das System spaeter hochskaliert werden soll, koennen Cloud- oder Virtual-Server eine Rolle spielen.
+Ein vollstaendiges Architekturbild ist im Anhang unter 
+
+%Softwarearchitektur-Abschnitt
+Für die Umsetzung des Bewerbermanagementsystems wird eine klassische 3-Schichten-Architektur gewählt. 
+Diese unterteilt die Anwendung in Präsentationsschicht, Anwendungslogik und Datenhaltung. 
+Die Präsentationsschicht bildet die Benutzeroberfläche für Bewerber:innen und Recruiter:innen ab, während die Geschäftslogik in PHP umgesetzt wird und die Verarbeitung von Bewerbungen, Statuswechseln und Verwaltungsfunktionen steuert. 
+Die Datenhaltung erfolgt über eine SQLite-Datenbank, in der Stellenanzeigen, Bewerbungen, Nutzer und Dokumente strukturiert gespeichert werden.
+Die gewählte Architektur eignet sich besonders für den prototypischen Charakter des Systems, da sie eine klare Trennung der Verantwortlichkeiten ermöglicht und dadurch Wartbarkeit, Übersichtlichkeit und Erweiterbarkeit verbessert. Gleichzeitig bleibt die technische Umsetzung schlank und angemessen für den Umfang eines Minimum Viable Product.
