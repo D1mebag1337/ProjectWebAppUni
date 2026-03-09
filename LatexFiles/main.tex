@@ -27,6 +27,9 @@
 \addbibresource{literatur.bib}
 \onehalfspacing
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{chngcntr}
 \begin{document}
 
 \tableofcontents
@@ -37,4 +40,15 @@
 
 
 \printbibliography
+\appendix
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\section*{Anhang}
+\addcontentsline{toc}{section}{Anhang}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\input{resources/vergleichBackend.tex}
+\input{resources/vergleichDatenbanken.tex}
+
 \end{document}
