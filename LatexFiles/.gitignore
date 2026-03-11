@@ -1,14 +1,13 @@
-
 # Latex Binaries und Referenzen
-.aux
-.bbl
-.bcf
-.blg
-.fdb*
-.fls
-.log
-.out
-.pdf
-.run.xml
-.toc
-.xdv
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb*
+*.fls
+*.log
+*.out
+*.pdf
+*.run.xml
+*.toc
+*.xdv
