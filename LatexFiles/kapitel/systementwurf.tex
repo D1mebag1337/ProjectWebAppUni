@@ -1,0 +1,40 @@
+\section{Systementwurf}
+\subsection{User Interface}
+Zur Planung der Benutzeroberfläche wurden im Vorfeld Wireframes und Mockups mit dem Design-Tool Figma erstellt. 
+Diese dienen dazu, die Struktur der einzelnen Seiten frühzeitig zu visualisieren und zu überprüfen. 
+Interaktive Funktionalitäten oder Navigationsflüsse wurden im Rahmen dieses Projekts nicht prototypisch umgesetzt. 
+Die Entwürfe umfassen unter anderem:
+\begin{itemize}
+	\item die Karriereseite (vgl. \ref{fig:landingPage})
+	\item die Stellenübersicht (vgl. \ref{fig:stellenOverview})
+	\item die detailierte Stellenanzeige (vgl. \ref{fig:stelle})
+	\item ein Bewerbungsformular für Kandidat:innen (vgl. \ref{fig:bewerbungFormular})
+	\item ein Dashboard fuer Recruiter:innen (vgl. \ref{fig:recruiterDashboard})
+\end{itemize}
+Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden 
+\href{https://www.figma.com/design/0LDsbppkYlQgEbpulk5ud9/ATS-WebApp?node-id=20-46&t=cHVE2zw3fKD8hl14}{\textit{Link}} eingesehen werden.
+
+\subsection{Datenmodell}
+Datenmodell wurde mithilfe eines ER-Modell visualisiert.
+Das ERM ist im Anhang unter --Hier Abbildung ERM referenzieren-- zu finden.
+
+\subsection{Technologieauswahl}
+Aufgrund der Vergleiche, die in den Tabellen \ref{tab:vglBackend} und \ref{tab:dbvergleich} durchgefuehert wurden, ergbibt sich folgender Tech-Stack.
+Das Backend wird mittels PHP, das Frontend via dem CSS Framework Tailwind implementiert und als Datenbank wird das leichgewichtige SQLite DBMS genutzt.
+
+\subsection{Infrastruktur}
+Die Infrastruktur des Systems ist in drei Umgebungen unterteilt: Entwicklungs-, Test- und Produktivumgebung. 
+Die Entwicklung erfolgt auf der lokalen Entwicklermaschine, die Testumgebung wird mittels VM gehostet und der prototypische Betrieb der Anwendung erfolgt auf einem Raspberry Pi. 
+Auf dem Gerät läuft eine Linux-basierte Serverumgebung. :w
+Der zentrale Apache-Web-Server und die PHP-Anwendung werden mithilfe des Tools Docker containisiert.
+Durch die Nutzung von Docker sind die Umgebungen standardisiert, was einen Rollout von Test auf Prod relativ leicht gestaltet.
+Der PI ist fuer diesen MVP vollkommend ausreichend. Falls das System spaeter hochskaliert werden soll, koennen Cloud- oder Virtual-Server eine Rolle spielen.
+Ein vollstaendiges Architekturbild ist im Anhang unter 
+
+\subsection{Softwarearchitektur}
+Für die Umsetzung des Bewerbermanagementsystems wird eine klassische 3-Schichten-Architektur gewählt. 
+Diese unterteilt die Anwendung in Präsentationsschicht, Anwendungslogik und Datenhaltung. 
+Die Präsentationsschicht bildet die Benutzeroberfläche für Bewerber:innen und Recruiter:innen ab, während die Geschäftslogik in PHP umgesetzt wird und die Verarbeitung von Bewerbungen, Statuswechseln und Verwaltungsfunktionen steuert. 
+Die Datenhaltung erfolgt über eine SQLite-Datenbank, in der Stellenanzeigen, Bewerbungen, Nutzer und Dokumente strukturiert gespeichert werden.
+Die gewählte Architektur eignet sich besonders für den prototypischen Charakter des Systems, da sie eine klare Trennung der Verantwortlichkeiten ermöglicht und dadurch Wartbarkeit, Übersichtlichkeit und Erweiterbarkeit verbessert. 
+Gleichzeitig bleibt die technische Umsetzung schlank und angemessen für den Umfang eines Minimum Viable Product.
