@@ -39,107 +39,70 @@
     \label{fig:recruiterDashboard}
 \end{figure}
 
-\section{Vergleich moeglicher Technologien}
+\section{Qualitaetsmerkmale der Applikation}
 
-%Tabelle 1 - Vergleich Tech-Stack
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabularx}{\textwidth}{lXXX}
+\begin{tabularx}{\textwidth}{lX}
 \toprule
-Kriterium & PHP & Node.js & Spring Boot \\
+Kriterium & Definition \\
 \midrule
-Einstieg und Lernaufwand
-& Sehr gering
-& Mittel, Kenntnisse in JavaScript und zugehörigen Frameworks erforderlich
-& Hoch, Kenntnisse in Java und Framework-Konfiguration nötig \\
-
-Entwicklungsaufwand
-& Schnell umsetzbar für klassische Webanwendungen
-& Flexibel, aber oft zusätzliche Frameworks nötig
-& Strukturierte Entwicklung, aber relativ komplex \\
-
-Infrastruktur
-& Läuft direkt auf klassischen Webservern
-& Benötigt Node.js-Runtime
-& Benötigt Java-Runtime \\
-
-Projektkomplexität
-& Gering bis mittel
-& Gute Skalierbarkeit für moderne Webanwendungen
-& Für große Enterprise-Anwendungen geeignet \\
-
-Entwicklungszeit für MVP
-& Kurz
-& Mittel
-& Eher länger \\
-
-Eignung für dieses Projekt
-& Sehr gut geeignet
-& Okay, aber höherer Setup-Aufwand nötig
-& Für den Projektumfang überdimensioniert \\
-\bottomrule
-\end{tabularx}
-\caption{Ergebnisse des Tech-Stack-Vergleichs}
-\label{tab:vglBackend}
-\end{table}
-
-%Tabelle 2 - Vergleich Datenbanken
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabularx}{\textwidth}{lXXX}
-\toprule
-Kriterium & SQLite & MySQL & PostgreSQL \\
-\midrule
-Installation
-& Keine separate Installation erforderlich
-& Datenbankserver muss installiert werden
-& Datenbankserver muss installiert werden \\
-
-Systemarchitektur
-& Embedded-Datenbank (dateibasiert)
-& Client-Server-Datenbanksystem
-& Client-Server-Datenbanksystem \\
-
-Administrationsaufwand
-& Sehr gering
-& Mittel
-& Mittel bis höher \\
+Antwortzeit
+& Unter 1 Sekunde App-Aufrufzeit und Datei-Upload unter 3 Sekunden \\
 
 Skalierbarkeit
-& Für kleine Anwendungen geeignet
-& Gut skalierbar
-& Sehr gut skalierbar \\
+& Das System kann bis zu 10 - 30 gleichzeitige Nutzer verarbeiten \\
 
-Mehrbenutzerbetrieb
-& Eingeschränkt
-& Sehr gut geeignet
-& Sehr gut geeignet \\
-
-Einsatzgebiet
-& Prototypen, kleine Anwendungen
-& Webanwendungen und CMS-Systeme
-& Komplexe Anwendungen und große Systeme \\
-
-Geeignet für dieses Projekt
-& Sehr gut geeignet
-& Möglich, aber mehr Infrastruktur nötig
-& Für Projektumfang nicht erforderlich \\
+Datei-Handling
+& Datei-Uploads werden asynchron durchgefuehrt, d.h. kein Blocken der UI-Response \\
 \bottomrule
 \end{tabularx}
-\caption{Vergleich verschiedener Datenbanksysteme}
-\label{tab:dbvergleich}
+\caption{Definierte Kriterien Performance}
+\label{tab:performance}
 \end{table}
 
-%Architekturbild-Anhang
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Kriterium & Definition \\
+\midrule
+Softwarearchitektur
+& MVC Pattern durchgaengig eingehalten \\
 
-\section{Architekturbild}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{archBild.png}
-    \caption{Architekturbild.}
-    \label{fig:archBild}
-\end{figure}
+Testabdeckung
+& Kritische Funktionen durch Unit-Tests abgedeckt (50\%) \\
 
+Dokumentation
+& Oeffentliche Methoden kommentiert und Readme fuer Github Repo erstellt mit allgemeiner Abbildung der Architektur \\
+\bottomrule
+\end{tabularx}
+\caption{Definierte Kriterien Wartbarkeit}
+\label{tab:wartbarkeit}
+\end{table}
 
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Kriterium & Definition \\
+\midrule
+Authentifizierung
+& Alle nicht oeffentlichen Routen durch Auth-Middleware geschuetzt. Passwoerter ausschliesslich gehasht gespeichert \\
+
+Autorisierung
+& Recruiter:innen duerfen alle Bewerbungen einsehen. Bewerber nur die eigenen Dateien \\
+
+Eingabenvalidierung 
+& Alle Formulareingaben serverseitig validiert. Keine rohen SQL Strings - Nutzung des Query Builders oder Eloquent \\
+
+Umgebungsvariablen
+& Keine Secrets (DB Passwort) im Code-Repository. Alle sensiblen Informationen in entsprechenden .env Dateien \\
+\bottomrule
+\end{tabularx}
+\caption{Definierte Kriterien Sicherheit}
+\label{tab:sicherheit}
+\end{table}
