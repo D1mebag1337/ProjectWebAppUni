@@ -15,12 +15,17 @@ Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden
 \href{https://www.figma.com/design/0LDsbppkYlQgEbpulk5ud9/ATS-WebApp?node-id=20-46&t=cHVE2zw3fKD8hl14}{\textit{Link}} eingesehen werden.
 
 \subsection{Datenmodell}
-Datenmodell wurde mithilfe eines ER-Modell visualisiert.
-Das ERM ist im Anhang unter --Hier Abbildung ERM referenzieren-- zu finden.
+Das Datenmodell wurde mithilfe eines Entity-Relationship-Models erstellt. (vgl. \ref{fig:erm}) 
+Die Datentypen der einzelnen Spalten wurden mithilfe der Postgre Dokumentation \parencite{postgreDt} ermittelt, sodass eine Implementierung ohne weitere Konvertierungen erfolgen kann.
+Tabellen, wie \textit{User-Bewerber oder Stelle-Images} besitzen eine 1:1 Beziehung. 
+Dass bedeutet, dass genau ein Wert aus einer Tabelle genau einmal in der anderen zu finden ist. 
+Ebenso haben wir auch 1:n Beziehungen, bspw. zwischen den Tabellen \textit{Bewerber-Bewerbung}. 
+1:n bedeutet in diesem Fall, dass ein Bewerber n-Bewerbungen abgeben kann, jedoch eine Bewerbung genau einem Bewerber zugeordnet ist. 
+Ausserdem werden aussergewoehnlichere Datentypen, wie \textit{bytea} fuer PDF Speicherung oder \textit{json} fuer Speicherung von Datensaetzen in Form einer json, genutzt. 
 
 \subsection{Technologieauswahl}
 Der MVP wird in der Programmiersprache PHP mittels dem Framework Laravel erstellt. 
-Im Gegensatz zu .NET (Sprache C Sharp) oder Java Spring ist Laravel deutlich einfacher in Erstellung und Konfigurierung.
+Im Gegensatz zu .NET (Sprache C\#) oder Java Spring ist Laravel deutlich einfacher in Erstellung und Konfigurierung.
 Ebenso besitzt Laravel weniger Boilerplate Code, also Code der in verschiedenen Kontexten wiederverwendet werden kann bzw. teilweise muss. \parencite{boiler} 
 Eine weitere Option waere die Nutzung der Sprache Javascript mittels Node.JS. 
 Node.JS besitzt ein sehr grosses Oekosystem, was wiederum dazu fuehrt, dass jede Funktionalitaet in einer separaten Bibliothek zu finden ist. 
