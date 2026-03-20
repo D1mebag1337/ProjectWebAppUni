@@ -17,7 +17,7 @@ Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden
 \subsection{Datenmodell}
 Das Datenmodell wurde mithilfe eines Entity-Relationship-Models erstellt. (vgl. \ref{fig:erm}) 
 Die Datentypen der einzelnen Spalten wurden mithilfe der Postgre Dokumentation \parencite{postgreDt} ermittelt, sodass eine Implementierung ohne weitere Konvertierungen erfolgen kann.
-Tabellen, wie \textit{User-Bewerber oder Stelle-Images} besitzen eine 1:1 Beziehung. 
+Tabellenrelationen, wie \textit{User-Bewerber oder Stelle-Images} besitzen eine 1:1 Beziehung. 
 Dass bedeutet, dass genau ein Wert aus einer Tabelle genau einmal in der anderen zu finden ist. 
 Ebenso haben wir auch 1:n Beziehungen, bspw. zwischen den Tabellen \textit{Bewerber-Bewerbung}. 
 1:n bedeutet in diesem Fall, dass ein Bewerber n-Bewerbungen abgeben kann, jedoch eine Bewerbung genau einem Bewerber zugeordnet ist. 
@@ -43,7 +43,7 @@ Die Testumgebung, sowie eine moegliche Produmgebung stellt der Cloud-Hosting Bet
 Es wird der Cloud Service "Platform as a Service", kurz Paas, von Heroku genutzt, da somit das Haupaugenmerk auf die Entwicklung gelegt werden kann und nicht auf die Infrastruktur.
 Beim Betreiben von Websites ist heutzutage Cybersecurity ein extrem wichtiger Aspekt.
 Da in der ATS Applikation sensible Daten gespeichert werden, ist somit hier hoechste Vorsicht geboten.
-Die Absicherung der Infrastruktur bspw. durch Abfangen von DDOS-Attacken, obliegt somit dem Cloud Anbieter. 
+Die Absicherung der Infrastruktur, bspw. das Abfangen von DDOS-Attacken, obliegt somit dem Cloud Anbieter. 
 Wuerde man bspw. einen eigenen Web-Server betreiben, muesste man sich um die Security selber kuemmern. 
 Heroku bietet weiterfuehrend native Unterstuetzung fuer Laravel Anwendungen und Postgre Datenbanken an. 
 Dies ist unter Anderem auch der Grund fuer die Nutzung von Postgre als Datenbank. 
