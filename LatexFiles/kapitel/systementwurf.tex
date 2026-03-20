@@ -38,22 +38,24 @@ Jedoch wuerde dies nicht mit der Infrastrukturentscheidung, die Anwendung via Pa
 
 \subsection{Infrastruktur}
 Die Infrastruktur des Systems ist in drei Umgebungen unterteilt: Entwicklungs-, Test- und Produktivumgebung. 
-Die Entwicklung erfolgt auf der lokalen Entwicklermaschine.
-Die Testumgebung, sowie eine moegliche Produmgebung stellt der Cloud-Hosting Betreiber Heroku zur Verfuegung. 
-Es wird der Cloud Service "Platform as a Service", kurz Paas, von Heroku genutzt, da somit das Haupaugenmerk auf die Entwicklung gelegt werden kann und nicht auf die Infrastruktur.
-Beim Betreiben von Websites ist heutzutage Cybersecurity ein extrem wichtiger Aspekt.
-Da in der ATS Applikation sensible Daten gespeichert werden, ist somit hier hoechste Vorsicht geboten.
-Die Absicherung der Infrastruktur, bspw. das Abfangen von DDOS-Attacken, obliegt somit dem Cloud Anbieter. 
-Wuerde man bspw. einen eigenen Web-Server betreiben, muesste man sich um die Security selber kuemmern. 
-Heroku bietet weiterfuehrend native Unterstuetzung fuer Laravel Anwendungen und Postgre Datenbanken an. 
-Dies ist unter Anderem auch der Grund fuer die Nutzung von Postgre als Datenbank. 
-Wie bei Cloud-Hosting ueblich, gibt es verschiedene Preismodelle, die fuer die Nutzung erhoben werden. 
-Im Falle von Heroku nehmen wir die einfachsten Basic Optionen, weil diese fuer den MVP voellig ausreichend sind. 
-Diese sind:
+Die Entwicklung erfolgt auf der lokalen Entwicklermaschine. 
+Die Test- sowie eine mögliche Produktivumgebung stellt der Cloud-Hosting-Betreiber \textit{Laravel Cloud} zur Verfügung \parencite{laravelCloud}.
+Es wird der Cloud Service \textit{Platform as a Service}, kurz PaaS, von Laravel Cloud genutzt, da somit das Hauptaugenmerk auf die Entwicklung gelegt werden kann und nicht auf die Infrastruktur.
+Beim Betreiben von Websites ist heutzutage Cybersecurity ein extrem wichtiger Aspekt. 
+Da in der ATS-Applikation sensible Daten gespeichert werden, ist hier höchste Vorsicht geboten. 
+Die Absicherung der Infrastruktur, beispielsweise das Abfangen von DDoS-Attacken, obliegt somit dem Cloud-Anbieter. 
+Würde man hingegen einen eigenen Webserver betreiben, müsste man sich um die Security selbst kümmern.
+Laravel Cloud wurde speziell für Laravel-Anwendungen entwickelt und bietet native Unterstützung für PostgreSQL-Datenbanken \parencite{laravelCloudDocs}. 
+Dies ist auch der Grund für die Nutzung von PostgreSQL als Datenbanksystem.
+Wie bei Cloud-Hosting üblich, gibt es verschiedene Preismodelle. 
+Laravel Cloud verfolgt ein nutzungsbasiertes Abrechnungsmodell ohne feste monatliche Grundgebühr \parencite{laravelCloudPricing}. 
+Die Kosten entstehen ausschließlich durch aktive Nutzung. 
+Aufgrund von Auto-Hibernation skaliert die Anwendung bei Inaktivität automatisch auf null herunter, wodurch keine Kosten für Leerlaufzeiten anfallen. 
+Für den MVP wird der \textit{Starter Plan} genutzt, welcher folgende Leistungen umfasst:
 \begin{itemize}
-	\item App-Hosting - Basic Paket - 7 Euro \parencite{herokuPricing}
-	\item Datenbank-Hosting - Essential Zero - 5 Euro \parencite{herokuPricing}
-	\item Monatlich Gesamt - 12 Euro
+\item App-Hosting - Starter Plan (Flex Compute, mit Hibernation) \parencite{laravelCloudPricing}
+\item Datenbank-Hosting - Serverless PostgreSQL (mit Hibernation) \parencite{laravelCloudPricing}
+\item Monatliche Kosten - nutzungsabhängig, ca. 1--2 USD bei geringer Aktivität
 \end{itemize}
 
 \subsection{Softwarearchitektur}
