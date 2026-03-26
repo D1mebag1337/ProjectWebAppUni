@@ -1,18 +1,50 @@
 \section{Durchführung}
 \subsection{Einrichtung der Entwicklungsumgebung}
-%Ziele: 
-%-Installation PHP, Composer und Laravel Installer
-%	via Doku https://laravel.com/docs/13.x/installation#creating-a-laravel-project
-%	Container fuer Postgre und PHP Laufen
-%	WebApp ueber Port 80 aufrufbar
-%-Initialisieren eines Default Laravel Projects
-%	mittels cmd laravel new -> App Default mit Vue Frontend erstellt
-%-Einrichten der IDE Neovim mit relevanten Plugins fuer Intellisense und Autocompletion
-%	IDE Uebersichtsbild
-%	Siehe Chat von Clause zum Einrichten der Entwicklungsumgebung
+Für die Entwicklung wurde zunächst die notwendige Umgebung durch Installation von PHP, Composer und dem Laravel Installer eingerichtet sowie Docker-Container für PHP und PostgreSQL mithilfer der CLI \textit{sail} gestartet, sodass die Anwendung lokal über einen Webserver erreichbar ist. 
+Anschließend wurde ein Standard-Laravel-Projekt mit integriertem Vue-Frontend initialisiert und die Entwicklungsumgebung durch die Einrichtung der IDE Neovim mit entsprechenden Plugins für Intellisense und Autovervollständigung konfiguriert.
+Zusätzlich wurde ein Git-Repository auf der Plattform GitHub erstellt, um den Quellcode versionskontrolliert zu verwalten und eine strukturierte Weiterentwicklung sowie Integration mit der Staging-Umgebung zu ermöglichen. 
+Das Github-Repository ist oeffentlich und kann unter folgender URL eingesehen werden: \textit{\url{https://github.com/D1mebag1337/ats-app}}
 \subsection{Erstellung der Datenbankstruktur mittels Migration}
-%	Siehe Chat von Clause -Done
+Zunächst wurden die Datenbankzugangsdaten in der .env-Datei konfiguriert. 
+Anschließend wurden Migrationen und Modelklassen für die relevanten Entitäten (z. B. Nutzer, Bewerber, Stellen und Bewerbungen) erstellt und mit den entsprechenden Strukturen und Logiken befüllt. 
+Abschließend wurden die Migrationen ausgeführt, um die Datenbanktabellen automatisch zu erzeugen.
+Die Migration und Erstellung der entsprechenden Modelklassen erfolgte mithilfe der CLI \textit{sail}.
 \subsection{Implementierung der Benutzeroberflächen}
+Im Rahmen der Implementierung wurden zentrale Benutzeroberflächen für Bewerber:innen und Recruiter:innen entwickelt. 
+Die Landing Page stellt neben allgemeinen Informationen eine dynamische Übersicht offener Stellen bereit, die aus der Datenbank geladen und als Karten dargestellt werden. 
+Zu jeder Stelle kann eine Detailansicht mit Aufgaben, Anforderungen sowie einer Weiterleitung zum Bewerbungsprozess aufgerufen werden.
+\newline
+Die Navigation ermöglicht den Zugriff auf Login- und Registrierungsfunktionen und passt sich nach der Anmeldung rollenbasiert an. Für die Authentifizierung wurde eine kombinierte Login- und Registrierungsseite umgesetzt.
+\newline
+Das Recruiter-Dashboard bietet eine tabellarische Übersicht aller Bewerbungen mit der Möglichkeit, Statusänderungen vorzunehmen und Bewerbungsunterlagen gesammelt herunterzuladen. 
+Ergänzend wurde ein Formular zur Erstellung und Bearbeitung von Stellenanzeigen implementiert, das strukturierte Eingaben sowie Validierungen wie Wortlimits unterstützt.
+\newline
+Für Bewerber:innen steht ein Formular zur Verfügung, das die Bewerbung auf Stellen inklusive Upload relevanter Dokumente ermöglicht. 
+Dabei werden teilweise vorhandene Profildaten übernommen und eine DSGVO-konforme Einwilligung zur Datenverarbeitung eingeholt.
 \subsection{Implementierung der Geschäftslogik}
-\subsection{Durchführung von Unit-Tests}
+Im Backend wurde die Anwendungslogik mittels Laravel-Controllern umgesetzt. 
+Für die Authentifizierung wurde ein eigener Controller implementiert, der auf einem angepassten User-Modell basiert und Login sowie Registrierung mit Passwort-Hashing und Session-Handling realisiert.
+\newline
+Das Routing wurde zentral in der Datei \textit{web.php} definiert und über Middleware abgesichert. 
+Dabei erfolgt eine Trennung in öffentliche, rollenbasierte sowie authentifizierte Bereiche. 
+Recruiter:innen können Stellenanzeigen verwalten, während Bewerber:innen Bewerbungen erstellen und einreichen können.
+\newline
+Die Verwaltung von Stellenanzeigen erfolgt über einen Controller, der vollständige CRUD-Funktionalitäten inklusive Validierung bereitstellt. 
+Eingaben wie Aufgaben und Anforderungen werden strukturiert verarbeitet und teilweise als JSON gespeichert. 
+Bewerbungen werden über einen separaten Controller verarbeitet, der unter anderem Dateiuploads validiert, Daten speichert und den Download von Bewerbungsunterlagen ermöglicht. 
+Statusänderungen werden dabei anhand definierter Zustände überprüft und gespeichert.
+\newline
+Das Dashboard stellt abhängig von der Nutzerrolle entweder alle Bewerbungen oder nur eigene Bewerbungen dar. 
+Die Datenmodelle wurden an projektspezifische Anforderungen angepasst, beispielsweise durch benutzerdefinierte Primärschlüssel und Validierungslogiken. 
+Zugriffsrechte werden über Rollenprüfungen innerhalb der Controller sichergestellt.
+\newline
+Technisch wurde entschieden, hochgeladene Dokumente direkt in der Datenbank zu speichern, anstatt das Dateisystem zu verwenden. 
+Die Datenübertragung zwischen Backend und Frontend erfolgt über Inertia.js, wodurch auf separate API-Aufrufe verzichtet werden kann. 
+Zusätzlich werden serverseitige Validierungen, wie Wortbegrenzungen und Dateigrößenprüfungen, umgesetzt.
 \subsection{Manuelle Tests und Staging-Tests}
+Für die Bereitstellung einer Testumgebung wurde die Anwendung über Laravel Cloud deployed und mit einem Git-Repository verknüpft. 
+Änderungen im Code werden bei einem Push automatisch synchronisiert, erfordern jedoch ein manuelles Deployment, um aktiv geschaltet zu werden.
+Die Test-Applikation ist unter folgender URL zu erreichen: \textit{\url{https://ats-app-main-ecu5k9.free.laravel.cloud/}}
+\newline
+Zur Validierung der Funktionalitäten wurde in der Staging-Umgebung ein Admin-Benutzer eingerichtet, über den zentrale Funktionen der Recruiter-Rolle getestet werden können. 
+Für die Bewerberrolle besteht die Möglichkeit, eigenständig Testkonten über die Registrierungsfunktion mit beliebigen Dummy-Daten zu erstellen, sodass auch diese Nutzerperspektive geprüft werden kann.
