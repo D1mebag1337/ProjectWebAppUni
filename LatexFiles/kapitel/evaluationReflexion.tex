@@ -1,4 +1,24 @@
 \section{Evaluation und Reflexion}
 \subsection{Evaluation}
+Die im Kapitel 2.2 definierten Funktionalitäten konnten größtenteils erfolgreich umgesetzt werden. 
+Eine Ausnahme bildet der geplante Passwort-Reset-Prozess für Bewerber:innen und Recruiter:innen, der im Rahmen des ersten MVP noch nicht implementiert wurde.
+\newline
+Im Zuge manueller Tests traten vereinzelt technische Fehler auf, darunter fehlerhafte HTTP-Methoden, Inkonsistenzen zwischen Datenbanktabellen und PHP-Modellen sowie Routing-Probleme. 
+Diese konnten im Verlauf der Entwicklung behoben werden. 
+Ein aktuell noch bestehender Fehler besteht darin, dass Bewerber:innen mehrere Bewerbungen für dieselbe Stelle einreichen können. 
+Diese Einschränkung wird in einer folgenden Iteration (MVP 2) adressiert.
+\newline
+Zusätzlich kam es zu Problemen im Deployment-Prozess in der Staging-Umgebung (Laravel Cloud), die auf hart kodierte Pfadangaben zurückzuführen waren. 
+Dadurch konnten benötigte Verzeichnisse in der Zielumgebung nicht korrekt gefunden werden. 
+Diese Problematik wurde identifiziert und entsprechend angepasst.
+\newline
+Die definierten nicht-funktionalen Anforderungen konnten weitgehend eingehalten werden. Unit-Tests sowie eine vollständige Dokumentation wurden im Rahmen des MVP 1 noch nicht umgesetzt, sind jedoch für eine spätere Phase vorgesehen, sobald ein stabiler Systemzustand erreicht ist.
+\newline
+Die durchgeführten manuellen Tests bestätigen die Funktionsfähigkeit der zentralen Anwendungsprozesse. 
+Dazu zählen insbesondere die Erstellung und Verwaltung von Stellenanzeigen, die dynamische Aktivierung und Deaktivierung von Stellen, die Benutzerregistrierung und Authentifizierung sowie rollenbasierte Zugriffskontrollen. 
+Darüber hinaus wurden der Bewerbungsprozess inklusive Dokumentenupload und Validierung, die Darstellung von Bewerbungen im Recruiter-Dashboard sowie die Änderung und konsistente Anzeige von Bewerbungsstatus erfolgreich überprüft.
+\newline
+Zusammenfassend entspricht der entwickelte MVP 1 in weiten Teilen den geplanten Anforderungen und bildet die zentralen Kernprozesse eines Bewerbermanagementsystems funktionsfähig ab.
 \subsection{Reflexion}
+
 
