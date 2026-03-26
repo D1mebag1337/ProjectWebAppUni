@@ -45,6 +45,8 @@ Zusätzlich werden serverseitige Validierungen, wie Wortbegrenzungen und Dateigr
 Für die Bereitstellung einer Testumgebung wurde die Anwendung über Laravel Cloud deployed und mit einem Git-Repository verknüpft. 
 Änderungen im Code werden bei einem Push automatisch synchronisiert, erfordern jedoch ein manuelles Deployment, um aktiv geschaltet zu werden.
 Die Test-Applikation ist unter folgender URL zu erreichen: \textit{\url{https://ats-app-main-ecu5k9.free.laravel.cloud/}}
+Das erste Laden der Seite kann einige Sekunden dauern, da die Applikation bei Nicht-Nutzung in den Hibernation-Zustand wechselt. 
+Das bedeutet, die App wird heruntergefahren, wenn keine Nutzung stattfindet und beim ersten Aufruft wird sie aus dem Hibernation-Zustand "geweckt".
 \newline
 Zur Validierung der Funktionalitäten wurde in der Staging-Umgebung ein Admin-Benutzer eingerichtet, über den zentrale Funktionen der Recruiter-Rolle getestet werden können. 
 Für die Bewerberrolle besteht die Möglichkeit, eigenständig Testkonten über die Registrierungsfunktion mit beliebigen Dummy-Daten zu erstellen, sodass auch diese Nutzerperspektive geprüft werden kann.
