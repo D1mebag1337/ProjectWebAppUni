@@ -2,7 +2,7 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{UseCase.jpg}
-    \caption{Abbildung der Anwendungsfaelle mithile eines Use-Case Diagrammes}
+    \caption{Abbildung der Anwendungsfälle mithilfe eines Use-Case-Diagramms}
     \label{fig:useCase}
 \end{figure}
 
@@ -47,7 +47,7 @@
     \label{fig:erm}
 \end{figure}
 
-\section{Qualitaetsmerkmale der Applikation}
+\section{Qualitätsmerkmale der Applikation}
 
 \begin{table}[htbp]
 \centering
@@ -63,7 +63,7 @@ Skalierbarkeit
 & Das System kann bis zu 10 - 30 gleichzeitige Nutzer verarbeiten \\
 
 Datei-Handling
-& Datei-Uploads werden asynchron durchgefuehrt, d.h. kein Blocken der UI-Response \\
+& Datei-Uploads werden asynchron durchgeführt, d.h. kein Blocken der UI-Response \\
 \bottomrule
 \end{tabularx}
 \caption{Definierte Kriterien Performance}
@@ -78,13 +78,13 @@ Datei-Handling
 Kriterium & Definition \\
 \midrule
 Softwarearchitektur
-& MVC Pattern durchgaengig eingehalten \\
+& MVC Pattern durchgängig eingehalten \\
 
 Testabdeckung
 & Kritische Funktionen durch Unit-Tests abgedeckt (50\%) \\
 
 Dokumentation
-& Oeffentliche Methoden kommentiert und Readme fuer Github Repo erstellt mit allgemeiner Abbildung der Architektur \\
+& Öffentliche Methoden kommentiert und Readme für Github Repo erstellt mit allgemeiner Abbildung der Architektur \\
 \bottomrule
 \end{tabularx}
 \caption{Definierte Kriterien Wartbarkeit}
@@ -99,10 +99,10 @@ Dokumentation
 Kriterium & Definition \\
 \midrule
 Authentifizierung
-& Alle nicht oeffentlichen Routen durch Auth-Middleware geschuetzt. Passwoerter ausschliesslich gehasht gespeichert \\
+& Alle nicht öffentlichen Routen durch Auth-Middleware geschützt. Passwörter ausschließlich gehasht gespeichert \\
 
 Autorisierung
-& Recruiter:innen duerfen alle Bewerbungen einsehen. Bewerber nur die eigenen Dateien \\
+& Recruiter:innen dürfen alle Bewerbungen einsehen. Bewerber nur die eigenen Dateien \\
 
 Eingabenvalidierung 
 & Alle Formulareingaben serverseitig validiert. Keine rohen SQL Strings - Nutzung des Query Builders oder Eloquent \\
