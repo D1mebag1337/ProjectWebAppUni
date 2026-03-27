@@ -15,26 +15,30 @@ Die weiteren erstellten WireFrames bzw. Mockups koennen unter folgenden
 \href{https://www.figma.com/design/0LDsbppkYlQgEbpulk5ud9/ATS-WebApp?node-id=20-46&t=cHVE2zw3fKD8hl14}{\textit{Link}} eingesehen werden.
 
 \subsection{Datenmodell}
-Das Datenmodell wurde mithilfe eines Entity-Relationship-Models erstellt. (vgl. \ref{fig:erm}) 
-Die Datentypen der einzelnen Spalten wurden mithilfe der Postgre Dokumentation \parencite{postgreDt} ermittelt, sodass eine Implementierung ohne weitere Konvertierungen erfolgen kann.
-Tabellenrelationen, wie \textit{User-Bewerber oder Stelle-Images} besitzen eine 1:1 Beziehung. 
-Dass bedeutet, dass genau ein Wert aus einer Tabelle genau einmal in der anderen zu finden ist. 
-Ebenso haben wir auch 1:n Beziehungen, bspw. zwischen den Tabellen \textit{Bewerber-Bewerbung}. 
-1:n bedeutet in diesem Fall, dass ein Bewerber n-Bewerbungen abgeben kann, jedoch eine Bewerbung genau einem Bewerber zugeordnet ist. 
-Ausserdem werden aussergewoehnlichere Datentypen, wie \textit{bytea} fuer PDF Speicherung oder \textit{json} fuer Speicherung von Datensaetzen in Form einer json, genutzt. 
+Das Datenmodell wurde mithilfe eines Entity-Relationship-Modells erstellt (vgl. \ref{fig:erm}). 
+Die Datentypen der einzelnen Spalten wurden auf Basis der PostgreSQL-Dokumentation \parencite{postgreDt} gewählt, um eine direkte und konsistente Implementierung ohne zusätzliche Konvertierungen zu ermöglichen.
+\newline
+Zwischen den Tabellen bestehen unterschiedliche Relationen. 
+Beispielsweise liegt zwischen den Tabellen \textit{User} und \textit{Bewerber} sowie \textit{Stelle} und \textit{Images} jeweils eine 1:1-Beziehung vor. 
+Dies bedeutet, dass jedem Datensatz genau ein entsprechender Datensatz in der jeweils anderen Tabelle zugeordnet ist. 
+Darüber hinaus existieren auch 1:n-Beziehungen, beispielsweise zwischen den Tabellen \textit{Bewerber} und \textit{Bewerbung}. 
+In diesem Fall kann ein Bewerber mehrere Bewerbungen einreichen, während jede Bewerbung genau einem Bewerber zugeordnet ist.
+\newline
+Zusätzlich werden spezielle Datentypen wie \textit{bytea} zur Speicherung von PDF-Dokumenten sowie \textit{json} zur strukturierten Ablage komplexer Daten verwendet.
 
 \subsection{Technologieauswahl}
-Der MVP wird in der Programmiersprache PHP mittels dem Framework Laravel erstellt. 
-Im Gegensatz zu .NET (Sprache C\#) oder Java Spring ist Laravel deutlich einfacher in Erstellung und Konfigurierung.
-Ebenso besitzt Laravel weniger Boilerplate Code, also Code der in verschiedenen Kontexten wiederverwendet werden kann bzw. teilweise muss. \parencite{boiler} 
-Eine weitere Option waere die Nutzung der Sprache Javascript mittels Node.JS. 
-Node.JS besitzt ein sehr grosses Oekosystem, was wiederum dazu fuehrt, dass jede Funktionalitaet in einer separaten Bibliothek zu finden ist. 
-Man muss sozusagen mit vielen Dependencies arbeiten.
-Laravel bringt hingegen alle noetigen Features, wie Authentifikation, Routing, Dateiuploads, out of the box mit. 
-Als Datenbank wird eine Postgre SQL Database genutzt. 
-Dies haengt vor allem mit der Infrastrukturentscheidung im naechsten Punkt zusammen. 
-Alternativ waere fuer ein MVP auch eine SQLite Datenbank denkbar, da diese sehr leicht zu implementieren und zu konfigurieren ist. 
-Jedoch wuerde dies nicht mit der Infrastrukturentscheidung, die Anwendung via Paas zu hosten, funktionieren, da lokale Daten taeglich geloescht werden.
+Der MVP wird in der Programmiersprache PHP unter Verwendung des Frameworks Laravel umgesetzt. 
+Im Vergleich zu Alternativen wie .NET (C#) oder Spring (Java) zeichnet sich Laravel durch eine geringere Komplexität in Einrichtung und Konfiguration aus. 
+Zudem erfordert Laravel weniger Boilerplate-Code, also wiederkehrenden Standardcode, der in verschiedenen Kontexten erneut implementiert werden muss \parencite{boiler}.
+\newline
+Eine weitere mögliche Alternative wäre die Nutzung von JavaScript in Kombination mit Node.js. 
+Dieses bietet ein umfangreiches Ökosystem, führt jedoch häufig dazu, dass viele Funktionalitäten über externe Bibliotheken integriert werden müssen, wodurch die Anzahl an Abhängigkeiten steigt. 
+Laravel hingegen stellt zentrale Funktionen wie Authentifizierung, Routing und Dateiuploads bereits integriert zur Verfügung und ermöglicht somit eine strukturierte und effiziente Entwicklung.
+\newline
+Als Datenbanksystem wird PostgreSQL eingesetzt. 
+Diese Entscheidung steht im Zusammenhang mit der gewählten Infrastruktur, insbesondere im Hinblick auf den Einsatz einer Platform-as-a-Service-Umgebung. 
+Alternativ wäre für einen prototypischen Ansatz auch die Nutzung von SQLite denkbar, da dieses System einfach zu implementieren und zu konfigurieren ist. 
+Aufgrund der eingeschränkten Persistenz lokaler Daten in einer Cloud-basierten Umgebung wurde jedoch bewusst auf SQLite verzichtet.
 
 \subsection{Infrastruktur}
 Die Infrastruktur des Systems ist in drei Umgebungen unterteilt: Entwicklungs-, Test- und Produktivumgebung. 
@@ -59,14 +63,14 @@ Für den MVP wird der \textit{Starter Plan} genutzt, welcher folgende Leistungen
 \end{itemize}
 
 \subsection{Softwarearchitektur}
-MVC ist die definierte Architektur fuer die Applikation und steht fuer Model-View-Controller.
-Das Model beinhaltet Datenbank- und Businesslogiken, die View stellt das Layout bzw. die UI dar und der Controller bildet die Schnittstelle zwischen Model und View. \parencite{mvc}
-Diese Architektur bietet sich fuer kleinere, schlanke Anwendungen an und Laravel bringt diese standardmaessig mit. 
-Somit bleibt die technische Umsetzung schlank und angemessen für den Umfang eines Minimum Viable Product.
-Fuer groessere und komplexerer Business-Anwendungen finden eher MVVM oder Microservice-Architektur Anwendung.
-Folgende Qualitaetsmerkmale wurden fuer die Applikation identifiziert und definiert:
-\begin{itemize}
-	\item Performance (vgl. \ref{tab:performance})
-	\item Wartbarkeit (vgl. \ref{tab:wartbarkeit})
-	\item Sicherheit (vgl. \ref{tab:sicherheit})
-\end{itemize}
+Für die Umsetzung der Applikation wurde die Architektur nach dem Model-View-Controller (MVC)-Prinzip gewählt. 
+Diese unterteilt das System in drei zentrale Komponenten: 
+Das Model umfasst die Datenhaltung sowie die Geschäftslogik, die View ist für die Darstellung der Benutzeroberfläche verantwortlich und der Controller fungiert als Vermittler zwischen Model und View \parencite{mvc}.
+\newline
+Diese Architektur eignet sich insbesondere für kleinere bis mittelgroße Webanwendungen und wird vom verwendeten Framework Laravel standardmäßig unterstützt. 
+Dadurch kann eine strukturierte und zugleich schlanke Umsetzung des Systems gewährleistet werden, die dem Umfang eines Minimum Viable Product entspricht.
+\newline
+Für größere und komplexere Anwendungen kommen hingegen häufig Architekturmuster wie Model-View-ViewModel (MVVM) oder Microservice-Architekturen zum Einsatz, die eine höhere Skalierbarkeit und Flexibilität ermöglichen.
+\newline
+Im Rahmen der Architekturdefinition wurden zudem zentrale Qualitätsmerkmale identifiziert und berücksichtigt. 
+Dazu zählen insbesondere die Performance, die Wartbarkeit sowie die Sicherheit der Anwendung (vgl. Tabellen \ref{tab:performance}, \ref{tab:wartbarkeit} und \ref{tab:sicherheit}).
