@@ -24,6 +24,11 @@
   sorting=nyt
 ]{biblatex}
 \DeclareLanguageMapping{german}{german-apa}
+\DefineBibliographyStrings{ngerman}{
+  nodate    = {o\adddot\addspace J\adddot},
+  retrieved = {Abgerufen am},
+  from      = {, von},
+}
 \addbibresource{literatur.bib}
 \onehalfspacing
 \usepackage{hyperref}
@@ -47,7 +52,7 @@
 
 
 \clearpage
-\printbibliography[heading=bibintoc]
+\printbibliography[heading=bibintoc, title={Literaturverzeichnis}]
 \clearpage
 \appendix
 \clearpage
